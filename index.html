@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بهزاد اتابکی | واردات و صادرات کالا</title>
+<meta name="description" content="شرکت بازرگانی بهزاد اتابکی - بیست سال تجربه در واردات و صادرات، خرید، حمل و نقل، ترخیص کالا از گمرک بازرگان و منطقه آزاد ماکو">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Decorative trade-route background pattern (used sitewide) ===== -->
+<svg class="route-defs" width="0" height="0" style="position:absolute">
+  <defs>
+    <pattern id="routeDots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="var(--gold)" opacity="0.18"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-name">بهزاد اتابکی</span>
+      <span class="brand-tagline">واردات و صادرات کالا</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">خانه</a>
+      <a href="#services" class="nav-link">خدمات</a>
+      <a href="#about" class="nav-link">درباره ما</a>
+      <a href="#contact" class="nav-link">تماس با ما</a>
+      <a href="#request" class="nav-link nav-cta">درخواست کالا</a>
+    </nav>
+
+    <div class="header-phones">
+      <a href="tel:+989141654932" class="phone-pill">
+        <svg viewBox="0 0 24 24" class="icon-phone"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.8.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.3 2.6.8 3.8.1.4 0 .8-.2 1l-2.2 2z" fill="currentColor"/></svg>
+        <span>۰۹۱۴۱۶۵۴۹۳۲</span>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="باز کردن منو">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="hero" id="home">
+  <div class="slider" id="slider">
+
+    <div class="slide active" style="background-image:linear-gradient(135deg, rgba(10,22,40,.78), rgba(10,22,40,.55)), url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1920')">
+      <div class="container slide-content">
+        <p class="slide-eyebrow">از خرید تا تحویل درب کارخانه</p>
+        <h1 class="slide-title">همه کارها با ماست</h1>
+        <p class="slide-sub">خرید، حمل و نقل، ترخیص کالا، تحویل در مقصد</p>
+        <a href="#request" class="btn btn-gold">درخواست کالا</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:linear-gradient(135deg, rgba(10,22,40,.8), rgba(10,22,40,.58)), url('https://images.unsplash.com/photo-1605745341075-1b1adcc62fab?q=80&w=1920')">
+      <div class="container slide-content">
+        <p class="slide-eyebrow">منطقه آزاد ماکو و گمرک بازرگان</p>
+        <h1 class="slide-title">هر کالا، هر حجم<br>با بهترین قیمت</h1>
+        <p class="slide-sub">در سریع‌ترین زمان ممکن، تضمینی</p>
+        <a href="#request" class="btn btn-gold">درخواست کالا</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:linear-gradient(135deg, rgba(10,22,40,.8), rgba(10,22,40,.58)), url('https://images.unsplash.com/photo-1577416412292-747c6607f055?q=80&w=1920')">
+      <div class="container slide-content">
+        <p class="slide-eyebrow">از سال ۱۳۸۵ تا امروز</p>
+        <h1 class="slide-title">۲۰ سال تجربه<br>در تجارت جهانی</h1>
+        <p class="slide-sub">شریک مطمئن مشتریان عمده در سراسر ایران</p>
+        <a href="#request" class="btn btn-gold">درخواست کالا</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-controls container">
+    <button class="slider-arrow prev" id="prevSlide" aria-label="اسلاید قبلی">‹</button>
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-i="0"></button>
+      <button class="dot" data-i="1"></button>
+      <button class="dot" data-i="2"></button>
+    </div>
+    <button class="slider-arrow next" id="nextSlide" aria-label="اسلاید بعدی">›</button>
+  </div>
+
+  <div class="hero-route-line" aria-hidden="true"></div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="intro" id="about">
+  <div class="container intro-grid">
+    <div class="intro-text">
+      <p class="eyebrow">درباره ما</p>
+      <h2>۲۰ سال تجربه، بی‌نهایت اعتماد</h2>
+      <p class="intro-body">
+        شرکت بازرگانی بهزاد اتابکی با دو دهه تجربه درخشان در حوزه واردات و صادرات،
+        آماده ارائه خدمات کامل خرید، حمل و نقل، ترخیص کالا از منطقه آزاد ماکو و گمرک بازرگان،
+        و تحویل درب کارخانه یا انبار مشتریان از سراسر ایران است.
+        ما هر نوع کالایی از مواد اولیه، تاسیسات، ماشین‌آلات، کالاهای نهایی، مواد غذایی،
+        قطعات صنعتی و هر آنچه که مشتری درخواست کند را از هر نقطه جهان تامین می‌کنیم.
+      </p>
+      <p class="intro-commitment">تعهد ما: تجربه، اعتماد و سرعت.</p>
+    </div>
+    <div class="intro-stat">
+      <div class="stat-ring">
+        <span class="stat-number">۲۰</span>
+        <span class="stat-label">سال تجربه</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUES (3 cards) ===== -->
+<section class="values">
+  <div class="container values-grid">
+    <div class="value-card">
+      <div class="value-icon">
+        <svg viewBox="0 0 48 48"><path d="M24 4 L34 18 H14 Z M14 18 H34 L24 44 Z" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/><path d="M14 18 L8 18 L24 4 L20 18" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/><path d="M34 18 L40 18 L24 4 L28 18" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>تجربه</h3>
+      <p>۲۰ سال سابقه در واردات و تجارت</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">
+        <svg viewBox="0 0 48 48"><path d="M6 24c4-6 10-9 18-9s14 3 18 9c-4 6-10 9-18 9s-14-3-18-9z" fill="none" stroke="var(--gold)" stroke-width="2"/><circle cx="24" cy="24" r="5" fill="none" stroke="var(--gold)" stroke-width="2"/></svg>
+      </div>
+      <h3>اعتماد</h3>
+      <p>قیمت رقابتی و منصفانه، تحویل سالم و تضمینی</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">
+        <svg viewBox="0 0 48 48"><path d="M24 4c6 4 9 11 9 18 0 5-2 9-4 12l-5 6-5-6c-2-3-4-7-4-12 0-7 3-14 9-18z" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/><circle cx="24" cy="20" r="4" fill="none" stroke="var(--gold)" stroke-width="2"/><path d="M17 38l-4 6M31 38l4 6" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <h3>سرعت</h3>
+      <p>سرعت در خرید و حمل، تحویل در سریع‌ترین زمان</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="eyebrow center">خدمات ما</p>
+    <h2 class="section-title center">از سفارش تا تحویل، یک مسیر بدون دغدغه</h2>
+
+    <div class="services-track">
+      <div class="service-row">
+        <span class="service-index">۰۱</span>
+        <div class="service-text">
+          <h3>خرید کالا از سراسر جهان</h3>
+          <p>شناسایی و خرید مستقیم از تامین‌کنندگان معتبر در هر کشور، با بهترین قیمت ممکن.</p>
+        </div>
+      </div>
+      <div class="service-row">
+        <span class="service-index">۰۲</span>
+        <div class="service-text">
+          <h3>حمل و نقل بین‌المللی</h3>
+          <p>مدیریت کامل حمل دریایی، زمینی و هوایی کالا تا مرز ایران با نظارت مستقیم.</p>
+        </div>
+      </div>
+      <div class="service-row">
+        <span class="service-index">۰۳</span>
+        <div class="service-text">
+          <h3>ترخیص کالا از گمرک</h3>
+          <p>ترخیص سریع و قانونی از منطقه آزاد ماکو و گمرک بازرگان توسط تیم متخصص.</p>
+        </div>
+      </div>
+      <div class="service-row">
+        <span class="service-index">۰۴</span>
+        <div class="service-text">
+          <h3>تحویل در مقصد</h3>
+          <p>ارسال و تحویل ایمن کالا درب کارخانه یا انبار شما در هر نقطه از ایران.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="categories">
+  <div class="container">
+    <p class="eyebrow center">دسته‌بندی کالاها</p>
+    <h2 class="section-title center">هر کالایی که نیاز دارید</h2>
+
+    <div class="cat-grid">
+      <div class="cat-card">
+        <svg viewBox="0 0 40 40" class="cat-icon"><rect x="6" y="14" width="28" height="20" rx="2" fill="none" stroke="var(--gold)" stroke-width="1.8"/><path d="M12 14V9a8 8 0 0116 0v5" fill="none" stroke="var(--gold)" stroke-width="1.8"/></svg>
+        <h4>مواد اولیه</h4>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 40 40" class="cat-icon"><circle cx="16" cy="24" r="6" fill="none" stroke="var(--gold)" stroke-width="1.8"/><circle cx="28" cy="14" r="4" fill="none" stroke="var(--gold)" stroke-width="1.8"/><path d="M16 18v-4M28 18v8M12 24H6M22 24h4" stroke="var(--gold)" stroke-width="1.8"/></svg>
+        <h4>تاسیسات و ماشین‌آلات</h4>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 40 40" class="cat-icon"><rect x="8" y="8" width="24" height="24" rx="2" fill="none" stroke="var(--gold)" stroke-width="1.8"/><path d="M8 16h24M16 8v24" stroke="var(--gold)" stroke-width="1.8"/></svg>
+        <h4>کالاهای نهایی</h4>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 40 40" class="cat-icon"><path d="M20 6v12M14 6v6a3 3 0 006 0V6M26 6v28M14 18v16" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h4>مواد غذایی</h4>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 40 40" class="cat-icon"><circle cx="20" cy="20" r="6" fill="none" stroke="var(--gold)" stroke-width="1.8"/><path d="M20 8v4M20 28v4M8 20h4M28 20h4M11.5 11.5l2.8 2.8M25.7 25.7l2.8 2.8M11.5 28.5l2.8-2.8M25.7 14.3l2.8-2.8" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h4>قطعات صنعتی</h4>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 40 40" class="cat-icon"><path d="M20 8l12 6v12l-12 6-12-6V14z" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 20v12M8 14l12 6 12-6" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <h4>سایر کالاها (سفارشی)</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REQUEST FORM ===== -->
+<section class="request" id="request">
+  <div class="container request-grid">
+    <div class="request-intro">
+      <p class="eyebrow">درخواست کالا</p>
+      <h2>هر کالایی نیاز دارید، به ما بگویید</h2>
+      <p class="request-desc">
+        فرم زیر را با دقت تکمیل کنید. کارشناسان ما در کوتاه‌ترین زمان با شما تماس می‌گیرند
+        و بهترین قیمت و سریع‌ترین مسیر تامین را پیشنهاد خواهند داد.
+      </p>
+      <div class="request-route" aria-hidden="true"></div>
+    </div>
+
+    <form class="request-form" id="requestForm">
+      <div class="form-row">
+        <label for="fullName">نام و نام خانوادگی <span class="req">*</span></label>
+        <input type="text" id="fullName" name="نام و نام خانوادگی" required placeholder="مثلاً: علی محمدی">
+      </div>
+
+      <div class="form-row">
+        <label for="phone">شماره تماس <span class="req">*</span></label>
+        <input type="tel" id="phone" name="شماره تماس" required placeholder="۰۹۱۲۱۲۳۴۵۶۷">
+      </div>
+
+      <div class="form-row">
+        <label for="category">دسته‌بندی کالا <span class="req">*</span></label>
+        <select id="category" name="دسته‌بندی کالا" required>
+          <option value="" disabled selected>انتخاب کنید</option>
+          <option value="مواد اولیه">مواد اولیه</option>
+          <option value="تاسیسات و ماشین‌آلات">تاسیسات و ماشین‌آلات</option>
+          <option value="کالاهای نهایی">کالاهای نهایی</option>
+          <option value="مواد غذایی">مواد غذایی</option>
+          <option value="قطعات صنعتی">قطعات صنعتی</option>
+          <option value="سایر کالاها">سایر کالاها</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="itemName">نام کالا <span class="req">*</span></label>
+        <input type="text" id="itemName" name="نام کالا" required placeholder="مثلاً: ورق فولادی">
+      </div>
+
+      <div class="form-row full">
+        <label for="details">توضیحات کامل <span class="req">*</span></label>
+        <textarea id="details" name="توضیحات کامل" required rows="5" placeholder="مشخصات، برند، مدل، کشور مبدا، مقدار درخواستی..."></textarea>
+      </div>
+
+      <div class="form-row full">
+        <label for="attachment">آپلود عکس یا کاتالوگ (اختیاری)</label>
+        <div class="file-upload">
+          <input type="file" id="attachment" name="attachment" accept="image/*,.pdf">
+          <label for="attachment" class="file-label">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 16V4M12 4l-4 4M12 4l4 4M5 16v3a2 2 0 002 2h10a2 2 0 002-2v-3" stroke="var(--gold)" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span id="fileLabelText">انتخاب فایل...</span>
+          </label>
+        </div>
+      </div>
+
+      <input type="hidden" name="_subject" value="درخواست کالای جدید - بهزاد اتابکی">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" id="trackingField" name="شماره پیگیری" value="">
+
+      <button type="submit" class="btn btn-gold btn-submit" id="submitBtn">
+        <span class="btn-text">ارسال درخواست</span>
+      </button>
+    </form>
+
+    <div class="success-box" id="successBox">
+      <svg viewBox="0 0 52 52" class="success-check">
+        <circle cx="26" cy="26" r="24" fill="none" stroke="var(--gold)" stroke-width="2"/>
+        <path fill="none" stroke="var(--gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M15 27l7 7 16-16"/>
+      </svg>
+      <h3>درخواست شما با موفقیت ثبت شد</h3>
+      <p>شماره پیگیری: <strong id="trackingDisplay"></strong></p>
+      <p class="success-note">کارشناسان ما به‌زودی با شما تماس می‌گیرند.</p>
+      <button class="btn btn-outline-gold" id="newRequestBtn">ثبت درخواست جدید</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+  <div class="container">
+    <p class="eyebrow center">سوالات متداول</p>
+    <h2 class="section-title center">پاسخ به پرسش‌های پرتکرار</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>چقدر طول می‌کشد تا کالای من ترخیص و تحویل شود؟</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>زمان ترخیص بسته به نوع کالا و حجم سفارش متفاوت است، اما با بهره‌گیری از منطقه آزاد ماکو و گمرک بازرگان، فرآیند ترخیص و تحویل را در سریع‌ترین زمان ممکن انجام می‌دهیم.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>آیا فقط کالاهای خاصی را وارد می‌کنید؟</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>خیر. ما هر نوع کالایی شامل مواد اولیه، تاسیسات و ماشین‌آلات، کالاهای نهایی، مواد غذایی، قطعات صنعتی و هر کالای سفارشی دیگری که نیاز داشته باشید را از سراسر جهان تامین می‌کنیم.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span>برای ثبت سفارش باید چه اطلاعاتی ارائه دهم؟</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>کافیست فرم درخواست کالا را با مشخصات، برند، مدل، کشور مبدا و مقدار مورد نیاز تکمیل کنید. کارشناسان ما پس از بررسی، در کوتاه‌ترین زمان با شما تماس خواهند گرفت.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">تماس با ما</p>
+      <h2>همین حالا با ما در ارتباط باشید</h2>
+
+      <div class="contact-phones">
+        <a href="tel:+989141654932" class="contact-phone-item">
+          <svg viewBox="0 0 24 24" class="icon-phone"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.8.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.3 2.6.8 3.8.1.4 0 .8-.2 1l-2.2 2z" fill="currentColor"/></svg>
+          <span>۰۹۱۴۱۶۵۴۹۳۲</span>
+        </a>
+        <a href="tel:+989149643584" class="contact-phone-item">
+          <svg viewBox="0 0 24 24" class="icon-phone"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.8.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.3 2.6.8 3.8.1.4 0 .8-.2 1l-2.2 2z" fill="currentColor"/></svg>
+          <span>۰۹۱۴۹۶۴۳۵۸۴</span>
+        </a>
+      </div>
+      <p class="contact-note">هر دو شماره برای تماس تلفنی، تلگرام و واتساپ پاسخگو هستند.</p>
+
+      <div class="contact-socials">
+        <a href="https://t.me/Atabaki" target="_blank" rel="noopener" class="social-link" aria-label="تلگرام">
+          <svg viewBox="0 0 24 24"><path d="M21.5 4.5L2.7 12c-.8.3-.8 1.5.1 1.7l4.8 1.5 1.8 5.8c.3.8 1.3 1 1.9.4l2.7-2.6 4.7 3.5c.7.5 1.7.1 1.9-.7l3-15.4c.2-1-.8-1.8-1.7-1.4z" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://wa.me/989141654932" target="_blank" rel="noopener" class="social-link" aria-label="واتساپ">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.8-.4-1.6-.9-2.3-1.6-.6-.6-1.1-1.3-1.5-2-.1-.2 0-.4.1-.5.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.3-.9 2.1.1 1 .5 2 1.2 3 1 1.4 2.2 2.6 3.7 3.4.7.4 1.5.7 2.3.8.8.1 1.6 0 2.2-.5.4-.3.7-.8.8-1.3.1-.3 0-.6-.4-.7z" fill="var(--gold)"/><path d="M12 2a10 10 0 00-8.6 15.1L2 22l4.9-1.3A10 10 0 1012 2z" fill="none" stroke="var(--gold)" stroke-width="1.5"/></svg>
+        </a>
+        <a href="https://instagram.com/atabaki.trading" target="_blank" rel="noopener" class="social-link" aria-label="اینستاگرام">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="var(--gold)" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="var(--gold)" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="var(--gold)"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-map-card">
+      <div class="route-card">
+        <p class="route-label">محل فعالیت</p>
+        <div class="route-points">
+          <div class="route-point">
+            <span class="route-dot"></span>
+            <span>منطقه آزاد ماکو</span>
+          </div>
+          <div class="route-connector"></div>
+          <div class="route-point">
+            <span class="route-dot"></span>
+            <span>گمرک بازرگان</span>
+          </div>
+          <div class="route-connector"></div>
+          <div class="route-point">
+            <span class="route-dot"></span>
+            <span>سراسر ایران</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">بهزاد اتابکی</span>
+      <span class="footer-tag">واردات و صادرات کالا</span>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://t.me/Atabaki" target="_blank" rel="noopener" aria-label="تلگرام">
+        <svg viewBox="0 0 24 24"><path d="M21.5 4.5L2.7 12c-.8.3-.8 1.5.1 1.7l4.8 1.5 1.8 5.8c.3.8 1.3 1 1.9.4l2.7-2.6 4.7 3.5c.7.5 1.7.1 1.9-.7l3-15.4c.2-1-.8-1.8-1.7-1.4z" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://wa.me/989141654932" target="_blank" rel="noopener" aria-label="واتساپ">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l4.9-1.3A10 10 0 1012 2z" fill="none" stroke="var(--gold)" stroke-width="1.5"/></svg>
+      </a>
+      <a href="https://instagram.com/atabaki.trading" target="_blank" rel="noopener" aria-label="اینستاگرام">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="var(--gold)" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="var(--gold)" stroke-width="1.5"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">© ۲۰۲۶ بهزاد اتابکی — تمامی حقوق محفوظ است</p>
+  </div>
+</footer>
+
+<!-- ===== FLOATING CALL BUTTON ===== -->
+<a href="tel:+989141654932" class="floating-call" aria-label="تماس فوری">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.8.8.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.3 2.6.8 3.8.1.4 0 .8-.2 1l-2.2 2z" fill="currentColor"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
